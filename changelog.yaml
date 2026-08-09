@@ -1,0 +1,8 @@
+databaseChangeLog:
+    - changeSet:
+        id: v0.0.1
+        author: lo-han
+        tagDatabase:
+            tag: v0.0.1
+    - include:
+        file: migrations/create_tables.sql
