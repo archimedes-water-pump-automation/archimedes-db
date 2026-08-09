@@ -5,4 +5,11 @@ databaseChangeLog:
         tagDatabase:
             tag: v0.0.1
     - include:
-        file: migrations/create_tables.sql
+        file: migrations/create_water_tank_table.sql
+    - changeSet:
+        id: v0.0.2
+        author: lo-han
+        tagDatabase:
+            tag: v0.0.2
+    - include:
+        file: migrations/create_pump_tables.sql
