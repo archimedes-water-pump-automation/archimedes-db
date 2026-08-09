@@ -12,7 +12,7 @@ CREATE TABLE pump_status (
     pump_id UUID,
     started_at TIMESTAMP,
     stopped_at TIMESTAMP,
-    stop_reason reason DEFAULT 'water_shortage',
+    stop_reason reason,
 
     FOREIGN KEY (pump_id) REFERENCES pump(id)
 );
