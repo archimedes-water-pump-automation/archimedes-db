@@ -13,3 +13,12 @@ databaseChangeLog:
             tag: v0.0.2
     - include:
         file: migrations/create_pump_tables.sql
+    - changeSet:
+        id: v0.0.3
+        author: lo-han
+        tagDatabase:
+            tag: v0.0.3
+    - include:
+        file: migrations/alter_water_tank_add_shape_column.sql
+    - include:
+        file: migrations/alter_table_tank_add_dimensions_column.sql
