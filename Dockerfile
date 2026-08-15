@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 liquibase/liquibase:4.29.2
+FROM --platform=linux/arm64/v8 liquibase/liquibase:4.29.2
 
 COPY changelog.yaml changelog.yaml
 COPY migrations/ migrations/
